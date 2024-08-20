@@ -15,12 +15,13 @@
 body{
     display: flex;
     justify-content: center;
+
 }
+
 .main{
-    width: 1440px;
+    max-width: 1440px;
     background-color: var(--color-secundario);
     display: flex;
-    border: red 1px solid;    
     justify-content: space-between;
 }
 
@@ -31,9 +32,10 @@ body{
     display: flex;
     flex-direction: column;
     justify-content: center;
+    align-items: center;
     border-radius: 32px;
     margin: 40px;
-    box-shadow: #495057;
+    box-shadow: 0 24px 32px -8px rgb(0 0 0 / 8%);
 }
 .input {
     display: flex;
@@ -48,10 +50,6 @@ body{
     font-style: normal;
     font-size: 32px;
     color: var(--color-primario);
-}
-.input__textarea{
-    display: none;
-
 }
 .input__note{
     font-family: var(--fuente-inter);
@@ -69,6 +67,7 @@ body{
     font-size: 16px;
     color: var(--color-primario);
     margin-left: 240px;
+    margin-top: 8px;
 }
 .input__button{
     background-color: #D8DFE8;
@@ -80,13 +79,97 @@ body{
     text-align: center;
     
 }
-.input__normal{
+.input__textarea{
     margin-left: 240px;
-    height: 75%;
+    width: 577px;
+    height: 400px;
+    background-color: var(--color-secundario);
+    color: var(--color-primario);
+    border: 0;
+    font-family: var(--fuente-inter);
+    font-size: 32px;
 }
+.input__textarea::placeholder {
+    opacity: 0.5;
+    color: var(--color-primario);
+  }
 
 .active{
     background-color: var(--color-primario);
     border: 1px solid var(--color-primario);
     color: var(--color-terciario);    
 }
+
+.result__text{
+    font-family: var(--fuente-inter);
+    text-align: center;
+    padding: 32px;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;;
+}
+
+.result__text__title{
+    color:#343A40;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.result__text__normal{
+    color:#495057;
+    font-size: 16px;
+}
+
+.input__main{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;    
+    height: 100%;
+    padding-bottom: 64px;
+    padding-top: 64px;
+}
+@media (max-width: 768px){
+    body{
+        width: 100%;
+    }
+    .main{
+        flex-direction: column;
+        width: 100%;
+        padding: 40px;
+    }
+    .result{
+        width: auto;
+        min-height: auto;
+        margin: 0;
+    }
+    .input__header{
+        margin-left: 0;
+    }
+    .input__note{
+        margin-left: 0;
+    }
+    .input__buttons{
+        width: 100%;
+        margin-left: 0;
+    }
+    .input__textarea{
+        margin-left: 0;
+        width: 100%;
+    }
+    .result__back{
+        display: none;
+    }
+    .result__text{
+        width: 100%;
+    }
+    .input__button{
+        width: auto;
+    }
+    .input__footer{
+        width: 100%;
+    }
+    div{
+        border: 1px solid red;
+    }
+}
+
