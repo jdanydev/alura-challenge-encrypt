@@ -39,7 +39,7 @@ body{
 }
 .input {
     display: flex;
-    flex-direction: column;
+    flex-direction: column;    
 }
 .input__header{
     margin-top: 40px;
@@ -70,14 +70,14 @@ body{
     margin-top: 8px;
 }
 .input__button{
-    background-color: #D8DFE8;
+    background-color: transparent;
     border: 1px solid var(--color-primario);
     border-radius: 24px;
     padding: 22px;
     cursor: pointer;
     width: 280px;
     text-align: center;
-    
+    text-decoration: none;    
 }
 .input__textarea{
     margin-left: 240px;
@@ -128,17 +128,31 @@ body{
     padding-bottom: 64px;
     padding-top: 64px;
 }
+.result__text__encrypt{
+    color: var(--color-note);
+    font-size: 24px;
+    height: 800px;
+}
+.result__text__found{
+    display: flex;
+    flex-direction: column;    
+    font-family: var(--fuente-inter);
+    padding: 32px;
+    gap: 32px;
+}
+.button_copy{
+    width: auto;
+}
+
+/*div{     border: red 1px solid;}*/
 @media (max-width: 768px){
-    body{
-        width: 100%;
-    }
     .main{
         flex-direction: column;
         width: 100%;
         padding: 40px;
     }
     .result{
-        width: auto;
+        width: 100%;
         min-height: auto;
         margin: 0;
     }
@@ -147,29 +161,32 @@ body{
     }
     .input__note{
         margin-left: 0;
+        font-size: 12px;
     }
-    .input__buttons{
-        width: 100%;
+    .input__buttons,.input__textarea{
+        width: auto;
         margin-left: 0;
-    }
-    .input__textarea{
-        margin-left: 0;
-        width: 100%;
     }
     .result__back{
         display: none;
     }
-    .result__text{
-        width: 100%;
+    .result__text__encrypt{
+        height: auto;
+    }
+
+}
+@media (max-width: 375px){
+    .main{
+        padding: 16px;
+    }
+    .input__buttons{
+        flex-direction: column;
+        gap: 16px;
+    }
+    .input__header{
+        margin-top: 8px;
     }
     .input__button{
         width: auto;
     }
-    .input__footer{
-        width: 100%;
-    }
-    div{
-        border: 1px solid red;
-    }
 }
-
