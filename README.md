@@ -1,4 +1,4 @@
-# 🚀 Primer Challenge Alura - Encryptador de Texto
+# 🚀 Primer Challenge Alura - Encriptador de Texto
 
 ¡Bienvenido a mi primer challenge de Alura!
 
