@@ -1,4 +1,4 @@
-# 🚀 Primer Challenge Alura - Encryptador de Texto
+# 🚀 Primer Challenge Alura - Encriptador de Texto
 
 ¡Bienvenido a mi primer challenge de Alura!
 
@@ -8,7 +8,7 @@ En este challenge, se aplicará todo lo aprendido en la primera etapa. A lo larg
 
 ### 🎯 Objetivo
 
-El objetivo principal es implementar un encryptador de texto, utilizando **Vanilla Javascript**.
+El objetivo principal es implementar un encriptador de texto, utilizando **Vanilla Javascript**.
 
 ## 🛠️ Tecnologías Utilizadas
 
