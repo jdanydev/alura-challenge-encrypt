@@ -25,7 +25,7 @@ El objetivo principal es implementar un encryptador de texto, utilizando **Vanil
 │   ├── logo.png
 │   └── persona.png
 ├── styles/
-│   └── styles.css
+│   └── style.css
 ├── index.html
 └── README.md
 ```
