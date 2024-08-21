@@ -124,12 +124,3 @@ function caesarCipherDecrypt(encryptedText, shift) {
 
     return decryptedText;
 }
-
-function loading(){
-    let myVar = setTimeout(showMain, 3000);
-
-}
-function showMain(){
-    loader.style.display = "none";
-    //main.style.display = "flex";
-}
